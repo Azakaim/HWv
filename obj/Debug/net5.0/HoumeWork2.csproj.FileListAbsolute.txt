@@ -1,0 +1,16 @@
+C:\Users\user\Desktop\ConsoleApp2\Home_Work_05_10_21\bin\Debug\net5.0\HoumeWork2.exe
+C:\Users\user\Desktop\ConsoleApp2\Home_Work_05_10_21\bin\Debug\net5.0\HoumeWork2.deps.json
+C:\Users\user\Desktop\ConsoleApp2\Home_Work_05_10_21\bin\Debug\net5.0\HoumeWork2.runtimeconfig.json
+C:\Users\user\Desktop\ConsoleApp2\Home_Work_05_10_21\bin\Debug\net5.0\HoumeWork2.runtimeconfig.dev.json
+C:\Users\user\Desktop\ConsoleApp2\Home_Work_05_10_21\bin\Debug\net5.0\HoumeWork2.dll
+C:\Users\user\Desktop\ConsoleApp2\Home_Work_05_10_21\bin\Debug\net5.0\ref\HoumeWork2.dll
+C:\Users\user\Desktop\ConsoleApp2\Home_Work_05_10_21\bin\Debug\net5.0\HoumeWork2.pdb
+C:\Users\user\Desktop\ConsoleApp2\Home_Work_05_10_21\obj\Debug\net5.0\HoumeWork2.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\ConsoleApp2\Home_Work_05_10_21\obj\Debug\net5.0\HoumeWork2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\ConsoleApp2\Home_Work_05_10_21\obj\Debug\net5.0\HoumeWork2.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\ConsoleApp2\Home_Work_05_10_21\obj\Debug\net5.0\HoumeWork2.AssemblyInfo.cs
+C:\Users\user\Desktop\ConsoleApp2\Home_Work_05_10_21\obj\Debug\net5.0\HoumeWork2.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\ConsoleApp2\Home_Work_05_10_21\obj\Debug\net5.0\HoumeWork2.dll
+C:\Users\user\Desktop\ConsoleApp2\Home_Work_05_10_21\obj\Debug\net5.0\ref\HoumeWork2.dll
+C:\Users\user\Desktop\ConsoleApp2\Home_Work_05_10_21\obj\Debug\net5.0\HoumeWork2.pdb
+C:\Users\user\Desktop\ConsoleApp2\Home_Work_05_10_21\obj\Debug\net5.0\HoumeWork2.genruntimeconfig.cache

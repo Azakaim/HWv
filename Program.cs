@@ -1,95 +1,159 @@
 ﻿using System;
 
 namespace ConsoleApp1
+{
+    class Program
     {
-        class Program
-        {
         static void Main(string[] args)
+
         {
 
             //Вызвал метод вывода данных в выходной поток компилятора со значением
             //"Введите Ф.И.О.:"
 
-            Console.WriteLine("Введите Ф.И.О.:");
+            Console.WriteLine("\r\nВведите Ф.И.О.:");
 
-            //присвоил переменной Fullname типа string значение с помощью оператора =
+            //присвоил переменной Fullname типа var значение с помощью оператора =
             //методом обработки ввода информации пользователем
-            
-            string Fullname = Console.ReadLine();
 
-            //определил переменные
-            string Age;
+            var Fullname = Console.ReadLine();
 
-            int ValueWariable;
 
-            Console.WriteLine("Введите возраст:");
+            Console.WriteLine("\r\nВведите возраст:");
 
-            //присвоил переменной Age типа string значение с помощью оператора =
+            //присвоил переменной Age типа var значение с помощью оператора =
             //методом обработки ввода информации пользователем
-            Age = Console.ReadLine();
 
-            //присвоил переменной ValueWariable типа string значение из перемеенной Age с помощью
-            //метода конвертации типов string в тип int 
+            var Age = Console.ReadLine();
 
-            ValueWariable = Convert.ToInt32(Age);
+            //назначил переменную ValueWariable
 
-           
-            Console.WriteLine("Введите Email:");
+            double ValueWariable;
 
-            //присвоил переменной Email типа string значение с помощью оператора =
+
+            //присвоил значение true переменной flag
+
+            bool flag = true;
+
+             //использовал метод конвертации TryParse и присвоил переменной
+            //flag типа double значение из перемеенной Age или ValueWariable
+            //при не правлильно введенном значении с помощью
+            //метода конвертации типов 
+
+            flag = double.TryParse(Age, out ValueWariable);
+
+            // изучил 3.4 матерал урока и применил условную конструкцию if
+
+            if (flag)
+            {
+
+                Console.WriteLine("\r\nВведите Email:");
+
+            }
+
+            else
+            {
+                Console.WriteLine("\r\nНеверный формат ввода\nВведите данные еще раз :");
+
+                double j;
+
+                var Age2 = Console.ReadLine();
+
+                bool flag2 = double.TryParse(Age2, out j);
+
+                if (flag2)
+
+                {
+                    Console.WriteLine("\r\nВведите Email:");
+
+                }
+
+                else
+                {
+                    Console.WriteLine("\r\nI'm tired\r\nGAME OVER");
+
+                }
+
+
+                if (flag2 != true)
+                {
+                    Console.WriteLine("\r\nВведите Email:");
+                }
+
+            }
+
+            var Email = Console.ReadLine();
+
+            //присвоил переменной Email типа var значение с помощью оператора =
             //методом обработки ввода информации пользователем
-            string Email = Console.ReadLine();
 
-            //определил переменные
-            string Prog_points;
+            //назначил переменную ValueWariable1 
 
             double ValueWariable1;
 
-            Console.WriteLine("Введите набранные баллы по информатике:");
+            Console.WriteLine("\r\nВведите набранные баллы по информатике:");
 
-            //присвоил переменной Prog_points типа string значение с помощью оператора =
+            //присвоил переменной Prog_points типа var значение с помощью оператора =
             //методом обработки ввода информации пользователем
-            Prog_points = Console.ReadLine();
 
-            //присвоил переменной ValueWariable1 типа string значение из перемеенной Prog_points с помощью
-            //метода конвертации типов string в тип doble 
-            ValueWariable1 = Convert.ToDouble(Prog_points);
+            var Prog_points = Console.ReadLine();
+
+            
+
+            //использовал метод конвертации TryParse и присвоил переменной
+            //flag3 типа double значение из перемеенной Prog_points или ValueWariable1
+            //(при не правлильно введенном значениис помощью
+            //метода конвертации типов 
+            bool flag3 = true;
+
+            flag3 = double.TryParse(Prog_points, out ValueWariable1);
 
             //определил переменные
-            string Math_points;
+
 
             double ValueWariable2;
 
-            Console.WriteLine("Введите набранные баллы по математике:");
+            Console.WriteLine("\r\nВведите набранные баллы по математике:");
 
-            //присвоил переменной Math_points типа string значение с помощью оператора =
+            //присвоил переменной Math_points типа var значение с помощью оператора =
             //методом обработки ввода информации пользователем
-            Math_points = Console.ReadLine();
 
-            //присвоил переменной ValueWariable2 типа string значение из перемеенной Math_points с помощью
-            //метода конвертации типов string в тип doble
-            ValueWariable2 = Convert.ToDouble(Math_points);
+            var Math_points = Console.ReadLine();
 
-            //определил переменные
-            string Physics_scores;
+            //использовал метод конвертации TryParse и присвоил переменной
+            //flag4 типа double значение из перемеенной Math_points или ValueWariable2
+            //(при не правлильно введенном значениис помощью
+            //метода конвертации типов 
+
+            bool flag4 = true;
+
+            flag4 = double.TryParse(Math_points, out ValueWariable2);
+
+            //назначил переменную
 
             double ValueWariable3;
 
-                  Console.WriteLine("Введите набранные баллы по физике:");
+            Console.WriteLine("\r\nВведите набранные баллы по физике:");
 
             //присвоил переменной Physics_scores типа string значение с помощью оператора =
             //методом обработки ввода информации пользователем
-            Physics_scores = Console.ReadLine();
 
-            //присвоил переменной ValueWariable3 типа string значение из перемеенной Physics_scores с помощью
-            //метода конвертации типов string в тип doble
-            ValueWariable3 = Convert.ToDouble(Physics_scores);
+            var Physics_scores = Console.ReadLine();
+
+            //использовал метод конвертации TryParse и присвоил переменной
+            //flag5 типа double значение из перемеенной Physics_scores или ValueWariable3
+            //(при не правлильно введенном значениис помощью
+            //метода конвертации типов 
+
+            bool flag5 = true;
+
+            flag5 = double.TryParse(Physics_scores, out ValueWariable3);
+
 
             //Обьявил переменную под сумму баллов по всем предметам
             //Обьявил переменную под средний балл
-            
 
-            double ValueWariableAll, ValueWariableAll2, Sum_points;
+            double ValueWariableAll, ValueWariableAll2;
 
             // Посчитал сумму баллов
             ValueWariableAll = ValueWariable1 + ValueWariable2 + ValueWariable3;
@@ -111,16 +175,15 @@ namespace ConsoleApp1
 
             ////Вызвал метод вывода данных в выходной поток компилятора 
             Console.WriteLine(pattern,
-                             Fullname, 
+                             Fullname,
                              Age,
                              Email,
                              Prog_points,
                              Math_points,
                              Physics_scores);
 
-            Console.ReadKey(); 
+            Console.ReadKey();
 
-
-        } 
         }
     }
+}
