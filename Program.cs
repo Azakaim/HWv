@@ -184,6 +184,41 @@ namespace ConsoleApp1
 
             Console.ReadKey();
 
+            string topLeft = ".1";
+            string topRight = ".2";
+            string centerText = "Среднее арифметическое баллов:" +(ValueWariableAll2);
+            string bottomLeft = ",1";
+            string bottomRight = ",2";
+ 
+            Console.Clear();
+            
+            Console.Write(topLeft);
+
+            int topRightx = Console.WindowWidth - topRight.Length;
+
+            Console.SetCursorPosition(topRightx,0);
+
+            Console.Write(topRightx);
+
+            int bottomY = Console.WindowWidth - 1;
+
+            Console.SetCursorPosition(0,bottomY);
+
+            Console.Write(bottomLeft);
+
+            int bottomRightX = Console.WindowWidth - bottomRight.Length;
+
+            Console.SetCursorPosition(bottomY,bottomRightX);
+
+            Console.Write(bottomRight);
+
+            int centerX = (Console.WindowWidth / 2) - (centerText.Length / 2);
+
+            int centerY = (Console.WindowWidth/2)- 1 ;
+
+            Console.SetCursorPosition(centerX,centerY);
+
+            Console.Write(centerText);
         }
     }
 }
