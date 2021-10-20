@@ -182,43 +182,70 @@ namespace ConsoleApp1
                              Math_points,
                              Physics_scores);
 
-            Console.ReadKey();
+            /* Console.ReadKey();
 
-            string topLeft = ".1";
-            string topRight = ".2";
-            string centerText = "Среднее арифметическое баллов:" +(ValueWariableAll2);
-            string bottomLeft = ",1";
-            string bottomRight = ",2";
- 
-            Console.Clear();
-            
-            Console.Write(topLeft);
+             string topLeft = ".1";
+             string topRight = ".2";
+             string centerText = "Среднее арифметическое баллов:" +(ValueWariableAll2);
+             string bottomLeft = ",1";
+             string bottomRight = ",2";
 
-            int topRightx = Console.WindowWidth - topRight.Length;
 
-            Console.SetCursorPosition(topRightx,0);
+             /* Console.Clear();
 
-            Console.Write(topRightx);
+             Console.Write(topLeft);
 
-            int bottomY = Console.WindowWidth - 1;
+             int topRightx = Console.WindowWidth - topRight.Length;
 
-            Console.SetCursorPosition(0,bottomY);
+             Console.SetCursorPosition(topRightx,0);
 
-            Console.Write(bottomLeft);
+             Console.Write(topRightx);
 
-            int bottomRightX = Console.WindowWidth - bottomRight.Length;
+             int bottomY = Console.WindowWidth - 1;
 
-            Console.SetCursorPosition(bottomY,bottomRightX);
+             Console.SetCursorPosition(0,bottomY);
 
-            Console.Write(bottomRight);
+             Console.Write(bottomLeft);
 
-            int centerX = (Console.WindowWidth / 2) - (centerText.Length / 2);
+             int bottomRightX = Console.WindowWidth - bottomRight.Length;
 
-            int centerY = (Console.WindowWidth/2)- 1 ;
+             Console.SetCursorPosition(bottomY,bottomRightX);
 
-            Console.SetCursorPosition(centerX,centerY);
+             Console.Write(bottomRight);
 
-            Console.Write(centerText);
+             int centerX = (Console.WindowWidth / 2) - (centerText.Length / 2);
+
+             int centerY = (Console.WindowWidth/2)- 1 ;
+
+             Console.SetCursorPosition(centerX,centerY);
+
+             Console.Write(centerText);
+
+               -сформировать итоговую строку, которую вы хотите центрировать
+               -найти ее длину вот так str.Length
+               -определить ширину буфера экрана Console.BufferWidth
+               -рассчитать X-координату, для вывода посередине: X =  (Console.BufferWidth - str.Length) / 2 (тут возможно придется округлять)
+               -перевести курсор в место, где будете печатать Console.SetCursorPosition
+               -напечатать Console.WriteLine() 
+             */
+            //сформировал итоговую строку для  центрирования
+            string z = "Среднее арифметическое баллов: " + ValueWariableAll2;
+
+            int str1 = z.Length;
+
+            //рассчитаk X-координату, для вывода посередине
+            var x = (Console.BufferWidth - str1)/2;
+
+            var q = Console.BufferHeight / 2;
+
+            //перевести курсор в место, где будете печатать Console.SetCursorPosition
+            Console.SetCursorPosition(x,q);
+
+            Console.WriteLine(z);
+
+
+
+
         }
     }
 }
